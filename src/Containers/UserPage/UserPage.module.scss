@@ -1,0 +1,45 @@
+.userList {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 50;
+  font-size: 22px;
+  line-height: 10px;
+  color: #ffffff;
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+  gap: 20px;
+  height: 500px;
+  width: 400px;
+  align-items: center;
+  margin-left: 650px;
+  // overflow: scroll;
+  // position: relative;
+  // scroll-behavior: smooth;
+  .scrollButton {
+    color: #0b0b0b7a;
+    font-weight: 50;
+    font-size: 22px;
+    line-height: 10px;
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .myBtn {
+    padding: 13px 33px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 30px;
+    color: #342d14;
+    background-color: #ffc502;
+  }
+
+}
+

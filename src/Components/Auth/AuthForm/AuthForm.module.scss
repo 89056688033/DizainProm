@@ -1,0 +1,9 @@
+.errorTitle {
+  display: block;
+  &.hasError {
+    color: red;
+  }
+  &.noError {
+    display: none;
+  }
+}
