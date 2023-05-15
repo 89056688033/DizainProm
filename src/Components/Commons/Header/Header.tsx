@@ -36,9 +36,9 @@ export const Header = () => {
             </Link> */}
             <Link to={routes.PRODUCTS}>Номинации</Link>
             <Link to={routes.COURSE}>Курсы</Link>
-            <Link to={routes.USERS}>Пользователи</Link>
+            <Link to={routes.USERS}>Наши <br /> участники</Link>
             <Link to={`${routes.USERS}/2`} state={'test state'}>
-              Страница одного <br /> пользователя
+              Страница одного из <br /> участников
             </Link>
             {/* {email && <span>{email}</span>}
             {token ? (

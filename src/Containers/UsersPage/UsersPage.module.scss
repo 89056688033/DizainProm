@@ -2,9 +2,10 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 50;
-  font-size: 22px;
+  font-size: 30px;
   line-height: 10px;
   color: #ffffff;
+  background-color: #241002;
   display: grid;
   grid-template-rows: 100px auto 100px;
   gap: 20px;
@@ -12,11 +13,11 @@
   width: 400px;
   align-items: center;
   margin-left: 650px;
-  overflow: scroll;
+  overflow-y: auto;
   position: relative;
   scroll-behavior: smooth;
   .scrollButton {
-    color: #0b0b0b7a;
+    color: #241002;
     font-weight: 50;
     font-size: 22px;
     line-height: 10px;
@@ -25,6 +26,9 @@
     position: fixed;
     bottom: 0;
     right: 0;
+  }
+  .text{
+    color:white;
   }
 }
 

@@ -31,18 +31,19 @@ export const UserPage = () => {
   return (
     <>
     <div className={s.userList}>
-      <button className={s.myBtn} onClick={toggle}>TOGGLE</button>
-      <button className={s.myBtn} onClick={open}>OPEN</button>
-      <button className={s.myBtn} onClick={close}>CLOSE</button>
+      <button className={s.myBtn} onClick={toggle}>Посмотреть информацию о пользователе и закрыть</button>
+      <button className={s.myBtn} onClick={open}>Посмотреть информацию о пользователе</button>
+      <button className={s.myBtn} onClick={close}>ЗАКРЫТЬ</button>
       {isVisible && (
         <>
           {isError && <span>Error</span>}
           {isSuccess && user && (
             <div>
-              <span>{`Hi i am user number - ${params.id ?? ''} `}</span>
-              <span>{user.name}</span>
-              <span>{user.username}</span>
-              <span>{user.email}</span>
+              <span className={s.text}>{`Я участник номер - ${params.id ?? ''} `}</span>
+              <span className={s.text}>{user.name}</span>
+              <span className={s.text}>{user.username}</span>
+              <span className={s.text}>{user.email}</span>
+              <span className={s.text}>{user.address.city}</span>
             </div>
             // для постов аксиос Hi i am post number - ${params.id ?? ''}
           )}

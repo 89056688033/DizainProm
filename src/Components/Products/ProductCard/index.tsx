@@ -11,18 +11,17 @@ interface TProps {
 
 const Product = ({ productName, productValue }: TProps) => {
   const [count, setCount] = useState(0);
- // const [total, setTotal] = useState(count * productValue);
   const dispatch = useDispatch();
 
   const addCount = () => {
-    setCount((prevValue) => prevValue + 1 * productValue);
+    setCount((prevValue) => prevValue + 1);
   };
 
   const deleteCount = () => {
-    setCount((prevValue) => prevValue - 1 * productValue);
+    setCount((prevValue) => prevValue - 1);
   };
 
-  // const Sum = () => {
+  // const sumHandler = () => {
   //   setTotal((prevValue) => prevValue * productValue);
   // }
   const addProductHandler = () => {
@@ -39,11 +38,10 @@ const Product = ({ productName, productValue }: TProps) => {
         <span>{count}</span>
         <button onClick={addCount} >Добавить работу</button>
       </div>
-      {/* <div>
-      <span>{count}</span>
-      <button onClick={Sum} >Получить сумму</button>
-      </div> */}
-      {/* <div>
+      <div>
+      <span>{`Сумма : ${count * productValue}`}</span>
+      </div>
+       {/* <div>
         <button onClick={addProductHandler}>К Вашему портфолио</button>
       </div> */}
       </div>

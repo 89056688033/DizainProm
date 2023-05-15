@@ -1,11 +1,13 @@
 .cardWrapper {
-  padding: 20px;
-  border: 1px solid brown;
+  padding: 15px;
+  border: 1px solid rgb(226, 215, 215);
   border-radius: 10px;
+  color: white;
   .label {
-    font-size: 24px;
-  }
-  .content {
     font-size: 18px;
   }
+  .content {
+    font-size: 15px;
+  }
+
 }

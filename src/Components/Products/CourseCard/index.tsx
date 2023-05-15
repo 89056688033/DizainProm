@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import './index.css';
 interface TProps {
   productName: string;
-  CourseCard: string;
   limit: number;
-  value: number;
   // img: SVGAElement;
 }
 
-export const CourseCard = ({ CourseCard, productName, limit }: TProps) => {
+export const CourseCard = ({ productName, limit }: TProps) => {
   const [count, setCount] = useState(0);
   // const [count2, setCount2] = useState(0);
   // const [count3, setCount3] = useState(0);

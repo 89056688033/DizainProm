@@ -32,7 +32,7 @@ export const UsersPage = () => {
       </button>
       {isSuccess &&
          users.length > 0 &&
-         users.map(({ name, username, id, email }) => <UserCard key={id} name={name} email={email} username={username} id={id} />)}
+         users.map(({ name, username, id, email, address }) => <UserCard key={id} name={name} email={email} username={username} address={address} id={id} />)}
       {isLoading && <span>Loading...</span>}
       {isError && <span>Error</span>}
     </div>
