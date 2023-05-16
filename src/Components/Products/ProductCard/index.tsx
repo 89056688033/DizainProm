@@ -7,6 +7,7 @@ import { Value } from 'sass';
 interface TProps {
   productName: string;
   productValue: number;
+  // img: string;
 }
 
 const Product = ({ productName, productValue }: TProps) => {
@@ -32,11 +33,11 @@ const Product = ({ productName, productValue }: TProps) => {
     <div className="card_wrapper">
       <span>{productName}</span>
       <div className="button_section">
-        <button onClick={deleteCount} disabled={count === 0}>
+        <button className="bth" onClick={deleteCount} disabled={count === 0}>
           Удалить работу
         </button>
         <span>{count}</span>
-        <button onClick={addCount} >Добавить работу</button>
+        <button className="bth" onClick={addCount} >Добавить работу</button>
       </div>
       <div>
       <span>{`Сумма : ${count * productValue}`}</span>

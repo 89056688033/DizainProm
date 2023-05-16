@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import { getProducts } from '../../store/products/selectors';
 import { useBreakpoint } from '../../utils/hooks/useBreakpoint';
 import { InformationNominations } from '../../Text/CourseText';
+import ig from '../../accets/Podarok.png'
 
 const calculateValue = () => {
   let result = 0;
@@ -38,7 +39,7 @@ export const ProductsPage = () => {
         )} */}
         <ProductCard productName={`Дизайн транспортных средств цена одной работы ${100} рублей`} productValue={100} />
         <ProductCard productName={`Город будущего цена одной работы ${500} рублей`} productValue={500} />
-        <ProductCard productName={`Территория IT технологий цена одной работы ${300} рублей`} productValue={300} />
+        <ProductCard productName={`Территория IT технологий цена одной работы ${300} рублей`} productValue={300}/>
       </div>
       {/* <span>Количесво Ваших работ на фестивале</span>
       {products.map((product, index) => (
