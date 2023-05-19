@@ -58,7 +58,6 @@
     "typescript": "^4.9.5",
     "react-scripts": "latest",
     "space-infix-ops": "off",
-    "@typescript-eslint/space-infix-ops": "error",
-    "@typescript-eslint/naming-convention": "error"
+    "@typescript-eslint/space-infix-ops": "error"
   }
 }
